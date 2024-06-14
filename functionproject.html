@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  onclick="add()">increment</button>
+    <span id="s1">0</span>
+    <button onclick="sub()">decrement</button>
+</body>
+</html>
+<script>
+   var count=0
+    function add()
+    {
+    
+    count++;
+var s=document.getElementById('s1')
+console.log(s.innerText)
+s.innerText= count
+    }
+
+    function sub()
+    {
+        count--;
+        var s=document.getElementById('s1')
+          console.log(s.innerText)
+s.innerText= count
+    }
+</script>
