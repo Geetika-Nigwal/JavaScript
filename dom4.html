@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    const container= document.createElement('div')
+    console.log(container)
+    container.style.border= '2px solid red'
+    container.style.width='500px'
+    container.style.height='500px'
+
+
+    const head1=document.createElement('h1')
+    head1.innerText='Hello'
+
+    const para= document.createElement('p')
+    para.innerText="welcome to doms"
+
+    container.append(head1,para)
+
+    document.body.appendChild(container)
+</script>

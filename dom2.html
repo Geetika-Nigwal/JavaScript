@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+</body>
+</html>
+<script>
+    const a = document.createElement('h1')
+    a.innerText="Cybergrow"
+    console.log(a)
+
+    //create div
+
+   const container= document.getElementById('box')
+    console.log(container)
+    container.style.width= '300px'
+    container.style.height='300px'
+    container.style.border= '2px solid red'
+
+   //get h1 inside div
+    const b= document.createElement('h1')
+    b.innerText='Hello'
+   // container.appendchild(b)
+
+    //get paragraph inside div
+    const p= document.createElement('p')
+    p.innerText="Hello I am paragraph created by DOM"
+    //container.appendchild(p)
+
+    container.append(b,p)
+
+    
+</script>
